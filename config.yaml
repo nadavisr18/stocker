@@ -1,0 +1,33 @@
+Crawler:
+  num_workers: 1
+  overwrite: true
+
+YahooFetcher:
+  num_workers: 10
+  overwrite: true
+
+Standardizer:
+  num_workers: 10
+  overwrite: true
+  null_threshold: 4
+  years_per_sample: 6
+
+DataPrep:
+  num_workers: 10
+  overwrite: true
+  years: 1
+  base_symbol: "NDAQ"
+
+Model:
+  test_train_ratio: 0.1
+  type: "forest"
+
+RandomForest:
+  trees: 10
+
+NeuralNetwork:
+  layer_sizes: (16)
+  activation: 'relu'
+  solver: 'adam'
+  batch_size: 32
+  learning_rate: 0.001

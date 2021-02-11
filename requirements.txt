@@ -1,0 +1,10 @@
+pandas~=1.1.5
+selenium~=3.141.0
+lxml~=4.6.2
+tqdm
+numpy
+yfinance
+yaml
+matplotlib
+sklearn
+seaborn
